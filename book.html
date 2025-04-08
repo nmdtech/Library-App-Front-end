@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="/assets/images/icons/node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/assets/css/theme.css">
-    <title>My Books</title>
+    <title>My Books | The Alchemist</title>
 </head>
 <body>
 
@@ -106,7 +106,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td><a href="/book.html">The Alchemist</a></td>
+                        <td><a href="#">The Alchemist</a></td>
                         <td><a href="#">Paulo Coelho</a></td>
                     </tr>
                     <tr>
@@ -185,6 +185,46 @@
                         <td><a href="#">Sapiens: A Brief History of Humankind</a></td>
                         <td><a href="#">Yuval Noah Harari</a></td>
                     </tr>
+                    <tr>
+                        <td><a href="#">The Silent Patient</a></td>
+                        <td><a href="#">Alex Michaelides</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">The Seven Husbands of Evelyn Hugo</a></td>
+                        <td><a href="#">Taylor Jenkins Reid</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">The Midnight Library</a></td>
+                        <td><a href="#">Matt Haig</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Where the Crawdads Sing</a></td>
+                        <td><a href="#">Delia Owens</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">The Invisible Life of Addie LaRue</a></td>
+                        <td><a href="#">V.E. Schwab</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Circe</a></td>
+                        <td><a href="#">Madeline Miller</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">The Book Thief</a></td>
+                        <td><a href="#">Markus Zusak</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">The Alchemist</a></td>
+                        <td><a href="#">Paulo Coelho</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Big Little Lies</a></td>
+                        <td><a href="#">Liane Moriarty</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">The Great Gatsby</a></td>
+                        <td><a href="#">F. Scott Fitzgerald</a></td>
+                    </tr>
                     </tbody>
                 </table>
                 <nav aria-label="book_pages" class="d-flex justify-content-end">
@@ -221,56 +261,42 @@
                 <p class="text-theme mb-0"><i class="bi bi-info-circle-fill"></i> Click on a Book or author name to
                     view complete information about your selection</p>
             </div>
+
             <div class="bg-white p-4 p-sticky shadow-sm" id="right-main">
-                <h6>Add New Book</h6>
+                <div class="d-flex justify-content-end">
+                    <a href="#" class="btn brn-sm btn-outline-secondary book_btn">
+                        <i class="bi bi-pencil-fill"></i>
+                        Edit
+                    </a>
+                    <a href="#" class="btn brn-sm btn-secondary book_btn">
+                        <i class="bi bi-trash-fill"></i>
+                        Delete
+                    </a>
+                </div>
+                <h6>Book Info</h6>
                 <hr>
-                <form action="" method="post" class="no-outline" id="addNewBook">
-                    <div class="row align-items-end">
-                        <div class="col-4">
-                            <input type="text" class="form-control" placeholder="Book ID" aria-label="book_id">
-                        </div>
-                        <div class="col-8">
-                            <select name="" id="book_lang" aria-label="lang" class="form-select">
-                                <option value="si">Sinhala</option>
-                                <option value="en">English</option>
-                            </select>
-                        </div>
-                        <div class="col-12 mt-3">
-                            <input type="text" class="form-control" placeholder="Name of the Book" aria-label="book_name">
-                        </div>
-                        <div class="col-12 mt-3" id="book_name_s_wrapper">
-                            <input type="text" class="form-control" placeholder="පොතේ නම" aria-label="book_name_s"
-                                   id="book_name_s">
-                        </div>
-                        <div class="col-12 mt-3">
-                            <input type="text" class="form-control" placeholder="Name of the Author" aria-label="book_author">
-                        </div>
-                        <div class="col-12 mt-3">
-                            <input type="text" class="form-control" placeholder="ISBN" aria-label="isbn">
-                        </div>
-                        <div class="col-4">
-                            <input type="text" class="form-control" placeholder="Book Price" aria-label="book_price">
-                        </div>
-                        <div class="col-8 mt-3">
-                            <select name="" id="bk_cat" aria-label="lang" class="form-select">
-                                <option value="sb">Sinhala Novels</option>
-                                <option value="eb">English Novels</option>
-                                <option value="it">IT Books</option>
-                                <option value="re">Religious Books</option>
-                                <option value="so">Others (Sinhala)</option>
-                            </select>
-                        </div>
-                        <div class="col-12 mt-3">
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" id="book_available" aria-label="book_available" checked>
-                                Available
-                            </div>
-                        </div>
-                        <div class="col-12 my-3">
-                            <button type="submit" class="btn btn-theme w-100">Add Book</button>
-                        </div>
-                    </div>
-                </form>
+                <div class="row" id="book_info">
+                    <p class="col-4 bf">Book ID</p>
+                    <p class="col-8 text-capitalize bv">3</p>
+                    <p class="col-4 bf">Name</p>
+                    <p class="col-8 text-capitalize bv">The infinity</p>
+                    <p class="col-4 bf">S/ Name</p>
+                    <p class="col-8 text-capitalize bv">අනන්තය</p>
+                    <p class="col-4 bf">Author</p>
+                    <p class="col-8 text-capitalize bv">Yuval Noah Harari</p>
+                    <p class="col-4 bf">Language</p>
+                    <p class="col-8 text-capitalize bv">Sinhala</p>
+                    <p class="col-4 bf">Category</p>
+                    <p class="col-8 text-capitalize bv">Sinhala Novels</p>
+                    <p class="col-4 bf">ISBN</p>
+                    <p class="col-8 text-capitalize bv">978-0-321-76893-0</p>
+                    <p class="col-4 bf">Price</p>
+                    <p class="col-8 text-capitalize bv">LKR 600.00</p>
+                    <p class="col-4 bf">Availability</p>
+                    <p class="col-8 text-capitalize bv"><i class="bi bi-circle-fill text-danger"></i> No</p>
+                    <p class="col-4 bf">Lent</p>
+                    <p class="col-8 text-capitalize bv">Nenda (03/11/2024)</p>
+                </div>
             </div>
         </div>
 
