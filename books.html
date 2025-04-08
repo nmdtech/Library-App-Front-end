@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="/assets/images/icons/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/assets/css/theme.css">
+    <title>Home Library | Dashboard</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="main-nav">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">My Library</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <a class="nav-link" href="tmp.html">Manage</a>
+                <a class="nav-link" href="#">Books</a>
+                <a class="nav-link" href="#">Lending</a>
+                <a class="nav-link" href="#">Counter</a>
+                <a class="nav-link" href="#">About</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container-fluid" id="dashboard-main">
+    <div class="row">
+        <div class="col-2 position-fixed" id="sidebar">
+            <nav class="content">
+                <h4>Manage</h4>
+                <hr>
+                <a href="javascript:void(0)" id="bk_search_lnk"><i class="bi bi-search"></i>
+                    Search Books</a>
+                <hr>
+                <a href="#" data-bs-toggle="collapse" data-bs-target="#messages" aria-expanded="false" aria-controls="messages" class="toggle-link d-flex justify-content-between align-items-center">
+                    Authors <i class="bi bi-chevron-down"></i>
+                </a>
+                <div id="messages" class="collapse submenu">
+                    <a href="#">Add Author</a>
+                    <a href="#">View Authors</a>
+                </div>
+                <a href="#" data-bs-toggle="collapse" data-bs-target="#albums" aria-expanded="false" aria-controls="albums" class="toggle-link d-flex justify-content-between align-items-center">
+                    Book Categories <i class="bi bi-chevron-down"></i>
+                </a>
+                <div id="albums" class="collapse submenu">
+                    <a href="#">Add New Category</a>
+                    <a href="#">View Categories</a>
+                </div>
+                <a href="#" data-bs-toggle="collapse" data-bs-target="#identification" aria-expanded="false" aria-controls="identification" class="toggle-link d-flex justify-content-between align-items-center">
+                    Books <i class="bi bi-chevron-down"></i>
+                </a>
+                <div id="identification" class="collapse submenu">
+                    <a href="#">Add a New Book</a>
+                    <a href="#">Modify a Book</a>
+                    <a href="#">View Books</a>
+                    <a href="#">View Lent Books</a>
+                    <a href="#">Change Book ID</a>
+                </div>
+                <a href="/">Wish List</a>
+                <a href="#" data-bs-toggle="collapse" data-bs-target="#prj-list" aria-expanded="false"
+                   aria-controls="prj-list" class="toggle-link d-flex justify-content-between align-items-center">
+                    Lending <i class="bi bi-chevron-down"></i>
+                </a>
+                <div id="prj-list" class="collapse submenu">
+                    <a href="#">Lend a Book</a>
+                    <a href="#">Show Lend List</a>
+                </div>
+                <a href="#" data-bs-toggle="collapse" data-bs-target="#pub-list" aria-expanded="false"
+                   aria-controls="pub-list" class="toggle-link d-flex justify-content-between align-items-center">
+                    Counters <i class="bi bi-chevron-down"></i>
+                </a>
+                <div id="pub-list" class="collapse submenu">
+                    <a href="#">View Missing</a>
+                    <a href="#">Run Valuation</a>
+                </div>
+                <hr>
+                <a href="/" class="small"><i class="bi bi-box-arrow-right"></i> Logout</a>
+            </nav>
+        </div>
+
+        <div class="col-6 offset-2 p-3 position-relative form-wrapper" id="main-content">
+
+            <form class="d-flex no-outline position-relative" action="#" method="get" id="searchBook">
+                <input class="form-control border-end-0 radius-0" type="search"
+                       placeholder="Search Book by Id, Name or Author" aria-label="Search" id="bk_search">
+                <button class="btn btn-theme border-start-0 radius-0" type="submit">Search</button>
+            </form>
+
+            <div class="form-overlay position-absolute w-100 h-100 top-0 start-0"></div>
+
+            <div class="row py-4 px-3" id="section_items">
+                <div class="col-8 bg-white p-3">
+                    <h6>Wish List</h6>
+                    <hr>
+                    <div class="row img-item">
+                        <div class="col-3 img-thumb">
+                            <img src="/uploads/camelia.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-9 img-description d-flex justify-content-center flex-column">
+                            <h6>Camelia</h6>
+                            <p>Ananda Rajakaruna</p>
+                            <p>Thara Publishers</p>
+                        </div>
+                    </div>
+                    <div class="row img-item">
+                        <div class="col-3 img-thumb">
+                            <img src="/uploads/supusan%20lahiru.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-9 img-description d-flex justify-content-center flex-column">
+                            <h6>Supasan Lahiru</h6>
+                            <p>Chandi Kodikara</p>
+                            <p>RAK Publishers</p>
+                        </div>
+                    </div>
+                    <div class="row img-item">
+                        <div class="col-3 img-thumb">
+                            <img src="/uploads/images.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-9 img-description d-flex justify-content-center flex-column">
+                            <h6>Hathdinnath Tharuka</h6>
+                            <p>Imesha Madhavi Malaviarachci</p>
+                            <p>Nipuni Publishers</p>
+                        </div>
+                    </div>
+                    <div class="row img-item">
+                        <div class="col-3 img-thumb">
+                            <img src="/uploads/swetha.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-9 img-description d-flex justify-content-center flex-column">
+                            <h6>Swetha</h6>
+                            <p>Ramani Bulathsinhala</p>
+                            <p>Nimsa Publishers</p>
+                        </div>
+                    </div>
+                    <div class="row img-item">
+                        <div class="col-3 img-thumb">
+                            <img src="/uploads/wanaspathini.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-9 img-description d-flex justify-content-center flex-column">
+                            <h6>Wanaspathini</h6>
+                            <p>Dilhani Wickramarathna</p>
+                            <p>Ga Creations</p>
+                        </div>
+                    </div>
+                    <div class="row img-item">
+                        <div class="col-3 img-thumb">
+                            <img src="/uploads/kihiraguru.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-9 img-description d-flex justify-content-center flex-column">
+                            <h6>Kihiraguru</h6>
+                            <p>Ramanii Bulathsinhala</p>
+                            <p>Nimsa Publications</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 section-3 p-3">
+                    <section class="type-1-cat">
+                        <h6>Book Categories</h6>
+                        <hr>
+                        <ul>
+                            <li><a href="#">Sinhala Novels (115)</a></li>
+                            <li><a href="#">English Novels (31)</a></li>
+                            <li><a href="#">IT Books (16)</a></li>
+                            <li><a href="#">Religious Books (10)</a></li>
+                            <li><a href="#">Others (Sinhala) (5)</a></li>
+                            <li><a href="#">Others (English) (11)</a></li>
+                        </ul>
+                    </section>
+                    <section class="type-1-cat mt-5 fw-small">
+                        <h6>Recently Added</h6>
+                        <hr>
+                        <ul>
+                            <li><a href="#">ආදරය ගින්දරක්</a></li>
+                            <li><a href="#">දූලි</a></li>
+                            <li><a href="#">වැහි කුණා‍ටුවේ ආ මාරයා</a></li>
+                            <li><a href="#">Head First PHP &amp; SQL</a></li>
+                            <li><a href="#">නිල් දියමන්ති අබිරහස</a></li>
+                        </ul>
+
+                    </section>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-4 p-4">
+            <div class="row mb-3 align-items-center">
+                <div class="col-3">
+                    <img src="/assets/images/logo-sq.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-9">
+                    <h6 class="display-6 text-secondary">Home Library</h6>
+                    <hr>
+                    <a href="#" class="btn btn-sm btn-theme"><i class="bi bi-person-fill"></i> Admin</a>
+                    <a href="#" class="btn btn-sm btn-dark"><i class="bi bi-gear-fill"></i> Settings</a>
+                </div>
+            </div>
+            <div class="bg-white p-4 p-sticky" id="right-main">
+                <h6>Add New Book</h6>
+                <hr>
+                <form action="" method="post" class="no-outline" id="addNewBook">
+                    <div class="row align-items-end">
+                        <div class="col-4">
+                            <input type="text" class="form-control" placeholder="Book ID" aria-label="book_id">
+                        </div>
+                        <div class="col-8">
+                            <select name="" id="book_lang" aria-label="lang" class="form-select">
+                                <option value="si">Sinhala</option>
+                                <option value="en">English</option>
+                            </select>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input type="text" class="form-control" placeholder="Name of the Book" aria-label="book_name">
+                        </div>
+                        <div class="col-12 mt-3" id="book_name_s_wrapper">
+                            <input type="text" class="form-control" placeholder="පොතේ නම" aria-label="book_name_s"
+                                   id="book_name_s">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input type="text" class="form-control" placeholder="Name of the Author" aria-label="book_author">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input type="text" class="form-control" placeholder="ISBN" aria-label="isbn">
+                        </div>
+                        <div class="col-4">
+                            <input type="text" class="form-control" placeholder="Book Price" aria-label="book_price">
+                        </div>
+                        <div class="col-8 mt-3">
+                            <select name="" id="bk_cat" aria-label="lang" class="form-select">
+                                <option value="sb">Sinhala Novels</option>
+                                <option value="eb">English Novels</option>
+                                <option value="it">IT Books</option>
+                                <option value="re">Religious Books</option>
+                                <option value="so">Others (Sinhala)</option>
+                            </select>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="book_available" aria-label="book_available" checked>
+                                Available
+                            </div>
+                        </div>
+                        <div class="col-12 my-3">
+                            <button type="submit" class="btn btn-theme w-100">Add Book</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<script src="/assets/js/jquery-3.5.1.slim.min.js"></script>
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
