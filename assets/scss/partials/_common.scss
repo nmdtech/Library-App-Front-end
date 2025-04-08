@@ -1,0 +1,20 @@
+//styling
+.frame {
+  border: 1px solid $gray-4;
+  border-radius: 4px;
+}
+.text-theme {
+  color: $theme;
+}
+.bg-theme {
+  background-color: $theme;
+}
+.text-secondary {
+  color: $gray-7;
+}
+.text-gray {
+  color: $gray-4;
+}
+.fw-small, .fw-small * {
+  font-size: .85rem;
+}

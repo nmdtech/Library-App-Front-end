@@ -1,0 +1,10 @@
+.btn-theme {
+  background-color: $theme;
+  color: $white;
+
+  &:hover {
+    background-color: darken($theme, 15%);
+    color: $white;
+  }
+
+}
