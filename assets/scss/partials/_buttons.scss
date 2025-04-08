@@ -6,5 +6,13 @@
     background-color: darken($theme, 15%);
     color: $white;
   }
+}
 
+ul.pagination {
+  li.page-item.active {
+    span.page-link {
+      background-color: darken($theme, 20%);
+      border-color: darken($theme, 20%);
+    }
+  }
 }

@@ -17,9 +17,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <a class="nav-link" aria-current="page" href="dashboard.html">Home</a>
                 <a class="nav-link" href="tmp.html">Manage</a>
-                <a class="nav-link" href="#">Books</a>
+                <a class="nav-link active" href="books.html">Books</a>
                 <a class="nav-link" href="#">Lending</a>
                 <a class="nav-link" href="#">Counter</a>
                 <a class="nav-link" href="#">About</a>
@@ -94,99 +94,115 @@
 
             <div class="form-overlay position-absolute w-100 h-100 top-0 start-0"></div>
 
-            <div class="row py-4 px-3" id="section_items">
-                <div class="col-8 bg-white p-3">
-                    <h6>Wish List</h6>
-                    <hr>
-                    <div class="row img-item">
-                        <div class="col-3 img-thumb">
-                            <img src="/uploads/camelia.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-9 img-description d-flex justify-content-center flex-column">
-                            <h6>Camelia</h6>
-                            <p>Ananda Rajakaruna</p>
-                            <p>Thara Publishers</p>
-                        </div>
-                    </div>
-                    <div class="row img-item">
-                        <div class="col-3 img-thumb">
-                            <img src="/uploads/supusan%20lahiru.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-9 img-description d-flex justify-content-center flex-column">
-                            <h6>Supasan Lahiru</h6>
-                            <p>Chandi Kodikara</p>
-                            <p>RAK Publishers</p>
-                        </div>
-                    </div>
-                    <div class="row img-item">
-                        <div class="col-3 img-thumb">
-                            <img src="/uploads/images.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-9 img-description d-flex justify-content-center flex-column">
-                            <h6>Hathdinnath Tharuka</h6>
-                            <p>Imesha Madhavi Malaviarachci</p>
-                            <p>Nipuni Publishers</p>
-                        </div>
-                    </div>
-                    <div class="row img-item">
-                        <div class="col-3 img-thumb">
-                            <img src="/uploads/swetha.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-9 img-description d-flex justify-content-center flex-column">
-                            <h6>Swetha</h6>
-                            <p>Ramani Bulathsinhala</p>
-                            <p>Nimsa Publishers</p>
-                        </div>
-                    </div>
-                    <div class="row img-item">
-                        <div class="col-3 img-thumb">
-                            <img src="/uploads/wanaspathini.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-9 img-description d-flex justify-content-center flex-column">
-                            <h6>Wanaspathini</h6>
-                            <p>Dilhani Wickramarathna</p>
-                            <p>Ga Creations</p>
-                        </div>
-                    </div>
-                    <div class="row img-item">
-                        <div class="col-3 img-thumb">
-                            <img src="/uploads/kihiraguru.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-9 img-description d-flex justify-content-center flex-column">
-                            <h6>Kihiraguru</h6>
-                            <p>Ramanii Bulathsinhala</p>
-                            <p>Nimsa Publications</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 section-3 p-3">
-                    <section class="type-1-cat">
-                        <h6>Book Categories</h6>
-                        <hr>
-                        <ul>
-                            <li><a href="#">Sinhala Novels (115)</a></li>
-                            <li><a href="#">English Novels (31)</a></li>
-                            <li><a href="#">IT Books (16)</a></li>
-                            <li><a href="#">Religious Books (10)</a></li>
-                            <li><a href="#">Others (Sinhala) (5)</a></li>
-                            <li><a href="#">Others (English) (11)</a></li>
-                        </ul>
-                    </section>
-                    <section class="type-1-cat mt-5 fw-small">
-                        <h6>Recently Added</h6>
-                        <hr>
-                        <ul>
-                            <li><a href="#">ආදරය ගින්දරක්</a></li>
-                            <li><a href="#">දූලි</a></li>
-                            <li><a href="#">වැහි කුණා‍ටුවේ ආ මාරයා</a></li>
-                            <li><a href="#">Head First PHP &amp; SQL</a></li>
-                            <li><a href="#">නිල් දියමන්ති අබිරහස</a></li>
-                        </ul>
-
-                    </section>
-                </div>
+            <div class="my-3 p-3 bg-white" id="book_list">
+                <h5>Book List (English Novels)</h5>
+                <p class="text-end"><small>Showing (1-50) of 240</small></p>
+                <table class="table table-striped my-3">
+                    <thead>
+                    <tr class="cell-theme">
+                        <th scope="col">Book Name</th>
+                        <th scope="col">Author</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><a href="#">The Alchemist</a></td>
+                        <td><a href="#">Paulo Coelho</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">To Kill a Mockingbird</a></td>
+                        <td><a href="#">Harper Lee</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">1984</a></td>
+                        <td><a href="#">George Orwell</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Pride and Prejudice</a></td>
+                        <td><a href="#">Jane Austen</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">The Great Gatsby</a></td>
+                        <td><a href="#">F. Scott Fitzgerald</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">The Hobbit</a></td>
+                        <td><a href="#">J.R.R. Tolkien</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Harry Potter and the Sorcerer’s Stone</a></td>
+                        <td><a href="#">J.K. Rowling</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Life of Pi</a></td>
+                        <td><a href="#">Yann Martel</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">The Book Thief</a></td>
+                        <td><a href="#">Markus Zusak</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">The Catcher in the Rye</a></td>
+                        <td><a href="#">J.D. Salinger</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">The Da Vinci Code</a></td>
+                        <td><a href="#">Dan Brown</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Brave New World</a></td>
+                        <td><a href="#">Aldous Huxley</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">The Kite Runner</a></td>
+                        <td><a href="#">Khaled Hosseini</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Norwegian Wood</a></td>
+                        <td><a href="#">Haruki Murakami</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Animal Farm</a></td>
+                        <td><a href="#">George Orwell</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Gone Girl</a></td>
+                        <td><a href="#">Gillian Flynn</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">The Fault in Our Stars</a></td>
+                        <td><a href="#">John Green</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">The Girl on the Train</a></td>
+                        <td><a href="#">Paula Hawkins</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">The Shining</a></td>
+                        <td><a href="#">Stephen King</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Sapiens: A Brief History of Humankind</a></td>
+                        <td><a href="#">Yuval Noah Harari</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <nav aria-label="book_pages" class="d-flex justify-content-end">
+                    <ul class="pagination pagination-sm mb-0">
+                        <li class="page-item">
+                            <span class="page-link">&lt;&lt;</span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active" aria-current="page">
+                            <span class="page-link">2</span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">&gt;&gt;</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-
         </div>
 
         <div class="col-4 p-4">
